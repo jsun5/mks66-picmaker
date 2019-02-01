@@ -15,7 +15,8 @@ blue = random.randint(0,255)
 
 for i in range(x):
 	for g in range(y):
-		r = red
+		#r = red
+		r = 215
 		g = 25 + (abs(green - i - g))
 		#g = 255
 		b = blue - abs(i-g)
