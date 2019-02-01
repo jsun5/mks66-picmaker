@@ -3,8 +3,8 @@ import random
 final = ""
 
 type = "P3\n"
-x = 200
-y = 200
+x = 500
+y = 500
 largest = "\n255\n"
 
 final+= type + str(x) + " " + str(y) + largest
@@ -16,7 +16,8 @@ blue = random.randint(0,255)
 for i in range(x):
 	for g in range(y):
 		r = red
-		g = green + (abs(green - i - g))
+		g = 25 + (abs(green - i - g))
+		#g = 255
 		b = blue - abs(i-g)
 		final += str(r) + ' ' + str(g) + ' ' + str(b) + ' \t'
 	final += '\n'
