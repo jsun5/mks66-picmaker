@@ -19,4 +19,8 @@ for i in range(x):
 		g = green
 		b = blue
 		final += str(r) + ' ' + str(g) + ' ' + str(b) + ' \t'
+	final += '\n'
 		
+f = open("best.ppm",'w')
+f.write(final)
+f.close()
